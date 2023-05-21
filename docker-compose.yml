@@ -1,0 +1,11 @@
+version: '3'
+services:
+  v2ray:
+    build: .
+    restart: always
+    environment:
+      - UUID=2f41ada3-f6d7-4d33-a952-f6e7de376243
+      - V2PATH=blog
+    ports:
+      - "80:80"
+      - "443:80"
